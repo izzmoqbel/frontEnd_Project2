@@ -652,6 +652,45 @@ header nav .form i {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
+.skills .our-skill .prog-holder {
+  margin-bottom: 40px;
+}
+.skills .our-skill .prog-holder h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills .our-skill .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+.skills .our-skill .prog-holder .prog span {
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+  position: relative;
+}
+.skills .our-skill .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  color: white;
+  background-color: black;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+.skills .our-skill .prog-holder .prog span::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent;
+  right: -8px;
+  top: -10px;
+}
 /*End Skills Section*/
 /*Start Quote Section*/
 .quote {
@@ -681,3 +720,91 @@ header nav .form i {
   display: block;
 }
 /*End Quote Section*/
+/*Start Pricing Section*/
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo";
+  font-size: 20px;
+  position: relative;
+  right: -15px;
+}
+.pricing .plans .plan ul {
+  margin-left: -30px;
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.pricing .plans .plan .last-one {
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .footer a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  width: fit-content;
+  margin: 30px auto;
+}
+.pricing .contact {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+/*End Pricing Section*/
