@@ -785,7 +785,7 @@ header nav .form i {
 .pricing .plans .plan .last-one {
   border-bottom: 1px solid var(--main-color);
 }
-.pricing .plans .plan .footer a {
+.pricing .plans .plan .foot a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
@@ -795,7 +795,6 @@ header nav .form i {
 }
 .pricing .contact {
   text-align: center;
-  margin: 50px auto 20px;
   font-size: 20px;
 }
 .pricing .contact-link {
@@ -887,7 +886,6 @@ header nav .form i {
 /*Start Contact Us Section*/
 .contact {
   padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
 }
 .contact .content {
   display: flex;
@@ -921,6 +919,7 @@ header nav .form i {
   border: none;
   display: flex;
   margin-left: auto;
+  margin-bottom: 80px;
   text-transform: uppercase;
   cursor: pointer;
 }
