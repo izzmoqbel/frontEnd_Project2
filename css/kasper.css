@@ -919,6 +919,7 @@ header nav .form i {
   border: none;
   display: flex;
   margin-left: auto;
+  margin-bottom: 80px;
   text-transform: uppercase;
   cursor: pointer;
 }
